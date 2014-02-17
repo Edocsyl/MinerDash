@@ -1,7 +1,7 @@
 MinerDash
 =========
 
-Selfhosted YPool.net worker dashboard
+Self hosted YPool.net worker dashboard
 
 ![ScreenShot](https://raw.github.com/Edocsyl/MinerDash/master/overview.JPG)
 

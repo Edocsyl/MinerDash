@@ -2,7 +2,8 @@ MinerDash
 =========
 
 Selfhosted YPool.net worker dashboard
-![ScreenShot](https://raw.github.com/Edocsyl/MinerDash/master/overview.jpg)
+
+![ScreenShot](https://raw.github.com/Edocsyl/MinerDash/master/overview.JPG)
 
 Config
 --------------

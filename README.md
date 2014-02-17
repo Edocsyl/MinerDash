@@ -2,7 +2,7 @@ MinerDash
 =========
 
 Selfhosted YPool.net worker dashboard
-![ScreenShot](https://raw.github.com/i-saumitra/Voice-controlled-MP3-Player/master/screenshot.jpg)
+![ScreenShot](https://raw.github.com/Edocsyl/MinerDash/master/overview.jpg)
 
 Config
 --------------

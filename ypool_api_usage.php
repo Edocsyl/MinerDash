@@ -7,7 +7,7 @@
 * @license Apache License 2.0
 */
 
-require 'ypool.php';
+require 'src/ypool.php';
 
 //Parameter is the api-key. If you call something else than the global_stats an api-key is required.
 $y = new YPool(); 

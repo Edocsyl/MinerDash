@@ -18,14 +18,16 @@ $coins = array('XPM', 'RIC', 'DOGE');;
 
 YPool.net PHP API
 =========
-
+I made a simple YPool.net PHP Api to call the API from YPool a bit faster...
 Usage
 --------------
 ```php
+require 'ypool.php';
+
 //Parameter is the api-key. If you call something else than the global_stats an api-key is required.
 $y = new YPool(); 
 
 echo '<pre>';
-print_r($y->global_stats(Coins::DOGE));
+print_r($y->global_stats(Coins::DOGE)); //You can use 'DOGE' as well.
 echo '</pre>';
 ```

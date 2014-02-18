@@ -2,7 +2,6 @@
 /**
 * @author Edocsyl <kaj@edocsyl.ch>
 * @version 1.0
-* @category YPool API
 * @license Apache License 2.0
 */
 

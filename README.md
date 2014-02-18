@@ -11,7 +11,21 @@ Config
 Open index.php file and change following things.
 ```php
 // API Key from ypool.net
-$api_key = 'XXXXXXXXXXXXXXXXXXXXXXXX';
+$y = new YPool('XXXXXXXXXXXXXXXXXXXXXXXXX');
 // Coins: XPM, FTC, PTS, DOGE, MTC, RIC
-$coins = array('XPM', 'RIC', 'DOGE');
+$coins = array('XPM', 'RIC', 'DOGE');;
+```
+
+YPool.net PHP API
+=========
+
+Usage
+--------------
+```php
+//Parameter is the api-key. If you call something else than the global_stats an api-key is required.
+$y = new YPool(); 
+
+echo '<pre>';
+print_r($y->global_stats(Coins::DOGE));
+echo '</pre>';
 ```

@@ -1,19 +1,27 @@
 <?php
+/**
+* @author Edocsyl <kaj@edocsyl.ch>
+* @version 1.0
+* @category YPool API
+* @copyright Copyright (c) 2014, gigaIT.net
+* @license Apache License 2.0
+*/
 
-	/************* CONFIG *******************/
-	// API Key from ypool.net
-	$api_key = 'XXXXXXXXXXXXXXXXXXXXXXXX';
-	// Coins: XPM, FTC, PTS, DOGE, MTC, RIC
-	$coins = array('XPM', 'RIC', 'DOGE');
+require 'src/ypool.php';
 
-	
-	/*********** DO NOT CHANGE **************/
-	$workers = array();
-	$personal_stats = array();
-	foreach($coins as $c){
-		$workers[$c] = json_decode(file_get_contents('http://ypool.net/api/workers?coinType='.$c.'&key='.$api_key), true);
-		$personal_stats[$c] = json_decode(file_get_contents('http://ypool.net/api/personal_stats?coinType='.$c.'&key='.$api_key), true);
-	}
+/************* CONFIG *******************/
+// API Key from ypool.net
+$y = new YPool('XXXXXXXXXXXXXXXXXXXXXXXXX');
+// Coins: XPM, FTC, PTS, DOGE, MTC, RIC
+$coins = array('XPM', 'RIC', 'DOGE');
+
+/***************************************/
+$workers = array();
+$personal_stats = array();
+foreach($coins as $c){
+	$workers[$c] = $y->workers($c);
+	$personal_stats[$c] = $y->personal_stats($c);
+}
 ?>
 <!DOCTYPE html>
 <html>
